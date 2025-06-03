@@ -10,8 +10,7 @@ name = "gliderol-design-centre-visualiser-production"
 # Ensures it works even with environment variable usage
 always_include_files = ["functions/testconnections.js"]
 
-[site]
-bucket = "./dist" 
+
 
 # Plaintext environment variables (accessible via env.VAR_NAME)
 [env.production.vars]
