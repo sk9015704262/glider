@@ -1,0 +1,28 @@
+.banner h1{
+    text-transform: capitalize;
+    font-size: 48px;
+    line-height: 3.5rem;
+}
+
+.banner .banner-img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.banner .tryvisul{
+    background-color: #103469;
+    color: #fff;  
+    font-size: 18px; 
+    width: 100%;
+}
+
+.banner .contact{
+    color: #103469; 
+    border: 1px solid #103469; 
+    font-size: 18px; 
+    width: 100%;
+    font-weight: 500;
+}

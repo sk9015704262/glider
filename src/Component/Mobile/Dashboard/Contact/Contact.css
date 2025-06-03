@@ -1,0 +1,21 @@
+.contact h2{
+  font-size: 41px;
+}
+
+.contact form label{
+    font-weight: 500;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+}
+
+.contact .contactbtn{
+    background-color: #103469;
+    color: #fff;  
+    font-size: 18px; 
+    width: 100%;
+}

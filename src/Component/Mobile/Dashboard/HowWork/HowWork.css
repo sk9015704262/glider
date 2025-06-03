@@ -1,0 +1,27 @@
+.how-work .row{
+    background-color: #deeefc;
+}
+
+.how-work h2{
+    font-size: 38px;
+}
+
+.how-work h4{
+    font-weight: 700;
+}
+
+/* .how-work img{
+    width: 40px;
+    margin-bottom: 10px;
+} */
+
+.how-work .work-count{
+    width: max-content;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 1px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 10px;
+}

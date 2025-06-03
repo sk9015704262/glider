@@ -1,0 +1,103 @@
+.customise .dynamic-p {
+  background-color: #fff;
+  padding: 9px;
+  border: 1px solid #e9ecef;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.customisingDoor .upload-btn {
+  margin: auto;
+  text-align: center;
+  padding: 8px;
+  width: 50%;
+  font-weight: 500;
+  border: 1px solid #103469;
+  color: #103469;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.customisingDoor .door-text {
+  color: #103469;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.customisingDoor .start {
+  background-color: #103469;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+}
+
+.customisingDoor .selected .doorstyle-img {
+  height: 35px !important;
+  width: 35px !important;
+}
+
+.customisingDoor .selected {
+  width: 100%;
+  border: 1px solid #e9ecef;
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.customisingDoor .color-select {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.customisingDoor .color-select:focus-visible {
+  outline: none;
+}
+
+.customisingDoor .save-btn-container .save-btn {
+  background-color: #103469;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.customisingDoor .selected-mbl-btn {
+  width: 100px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.selected-mbl-btn:has(.hidden-radio:checked) {
+  border: 2px solid #103469;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.customisingDoor .selected-mbl-btn img {
+  width: 50px;
+  height: 60px;
+  margin: auto;
+}
+
+.customisingDoor .free-qoute{ 
+    background-color: #103469;
+    color: #fff;
+    font-size: 18px;
+    width: 100%; 
+}

@@ -1,0 +1,65 @@
+.chooseimg .upload{
+    color: #103469; 
+    border: 1px solid #e9ecef; 
+    font-size: 18px; 
+    width: 100%;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.chooseimg .choose-text{
+    color: #103469;
+    font-weight: 500;
+}
+
+.chooseimg .css-1b6zgcx-MuiCircularProgress-root{
+    border: 1px solid #e9ecef;
+    color: #103469;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+}
+
+.chooseimg .continue{
+    color: #fff; 
+    background-color: #103469; 
+    font-size: 18px; 
+    width: 100%;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.chooseimg .back{
+    color: #103469; 
+    border: 1px solid #103469; 
+    font-size: 18px; 
+    width: 100%;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.chooseimg .progress-container{
+    position: relative;
+}
+
+.chooseimg .progress-container .css-1txyin7-MuiLinearProgress-root{
+    height: 38px !important;
+    background-color: transparent;
+    border: 1px solid #e9ecef;
+}
+
+.chooseimg .progress-container .css-l16vtb-MuiLinearProgress-bar1{    
+    background-color: #deedfc;
+   
+}
+
+.chooseimg .progress-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #103469;
+    font-weight: 500;
+}

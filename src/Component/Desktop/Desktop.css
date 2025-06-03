@@ -1,0 +1,248 @@
+input[type='radio'] {
+  accent-color: #103469;
+}
+
+.desktop-main-nav {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.desktop-main-nav .navbar-nav {
+  align-items: center;
+}
+
+.desktop-main-nav .navbar-nav a {
+  font-weight: 500;
+  color: #103469;
+}
+
+.desktop-main-nav .dealer {
+  border: 1px solid #103469;
+  color: #103469;
+  font-size: 18px;
+}
+
+.desktop-main-nav .quote {
+  background-color: #103469;
+  color: #fff;
+  font-size: 16px;
+}
+
+.desktop-main-nav .search-input {
+  position: absolute;
+  right: 11%;
+  padding: 8px 6px;
+  border: 2px solid #103469;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #f7f7f7;
+}
+
+/* --------customise------ */
+.customise .h4 {
+  width: max-content;
+}
+
+.customise .save-btn {
+  color: #103469;
+  border: 1px solid #103469;
+  font-weight: 500;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.customise .save-btn:hover{
+  background-color: #eef1f7;
+}
+
+.customise .menu-btn button{
+  color: #103469;
+  border: 1px solid #103469;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.customise .menu-btn button:hover{
+  background-color: #eef1f7;
+}
+
+.customise .menu-appbar .css-1toxriw-MuiList-root-MuiMenu-list {
+  background-color: #103469;
+  color: #fff;
+  text-align: start;
+}
+
+.customise .info-btn {
+  font-size: 13px;
+  background-color: #dfe9f8;
+  color: #103469;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.customise .css-gn0oko-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+  background-color: #103469;
+  color: #fff;
+}
+
+.customise .window-box {
+  gap: 20px;
+}
+
+.customise .door-img,
+.customise .window-img {
+  margin-top: 5px;
+}
+
+.customise .selected-btn label {
+  text-align: center;
+}
+
+.customise .selected-btn {
+  padding: 5px;
+  border: 2px solid #ffffff00;
+  margin-right: 25px;
+  width: 26%;
+}
+
+.customise .selected-window {
+  padding: 5px;
+  border: 2px solid #ffffff00;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.customise .selected-btn .door-img{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+
+.selected-btn:has(.hidden-radio:checked) {
+  border: 2px solid #103469;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.selected-window:has(.hidden-radio:checked) {
+  border: 2px solid #103469;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.customise .free-qoute {
+  background-color: #103469;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+}
+
+.customise .color-label {
+  border-radius: 35%;
+  height: 28px;
+  width: 28px;
+  margin-right: 5px;
+}
+
+.customise .colorgrain {
+  background-image: url("../images/wood-texture.png");
+}
+
+.customise .composite {
+  background-image: url("../images/noise-texture.png");
+}
+
+.hidden-color:checked + .color-label {
+  border: 2px solid #ff7a00;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.customise .details-box p {
+  font-weight: 500;
+}
+
+.customise .details-box select,
+.customise .details-box input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.customise .file .upload-btn{
+  font-size: 20px;
+  border:  2px dotted #000;
+  width: 300px;
+  height: 150px;
+  align-content: center;
+  margin: auto; 
+  background-color: #f7f7f7;
+  cursor: pointer;
+  color: #103469;
+  font-weight: 600; 
+}
+
+.customise .file svg{
+  font-size: 40px;  
+}
+
+.customise .sticky-div{
+  position: sticky;
+  top: 0;
+}
+
+.home .home-head{
+  background-color: #103469;
+  padding: 16px 30px;
+}
+
+.home .home-head .logo img{
+  width: 170px;
+}
+
+.home .home-content{
+  width: 65%;
+  margin: auto;
+}
+
+.home h1{
+  color: #103469;
+}
+
+.home .upload .upload-btn{
+  /* border: 2px solid #103469; */
+  color: #103469;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.home .upload p{
+  font-weight: 700;
+  font-size: 20px;
+}

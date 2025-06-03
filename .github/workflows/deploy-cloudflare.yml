@@ -1,0 +1,60 @@
+name: 🚀 Deploy React App to Cloudflare Pages 🌩️
+
+on:
+  workflow_dispatch:  # 🧑‍💻 Manual deploy only
+
+jobs:
+  deploy:
+    # Cloud-hosted option:
+    # runs-on: ubuntu-latest  # 🐧 Use this for GitHub-hosted runners
+    runs-on: self-hosted      # 🏡 Dark Ice local runner (macOS, safer for testing)
+
+    env:
+      CI: false  # 🚫 Prevent warnings from failing the build
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v3
+
+      # 🧰 Ensure required Node.js version is available (Wrangler requires ≥ 18)
+      - name: 🧰 Setup Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      - name: 🏗️ Build React App
+        run: npm run build
+
+      # ⚠️ Local install of wrangler to avoid EACCES permission issues on self-hosted runners
+      - name: ⚙️ Install Cloudflare Wrangler Locally
+        run: npm install wrangler --save-dev
+
+      - name: 🌐 Deploy to Cloudflare Pages with Wrangler
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          echo "🚀 Deploying to Cloudflare Pages using local wrangler..."
+
+          # 🌩️ Local install of wrangler avoids global permission issues
+          npx wrangler pages deploy build \
+            --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME }} \
+            --branch=${{ github.ref_name }} \
+            --commit-hash=${{ github.sha }} \
+            --commit-message="${{ github.event.head_commit.message }}"
+
+          echo "✅ Deployment completed successfully!"
+
+      - name: 🔍 Test Brevo API Connectivity
+        run: |
+          echo "🔍 Testing /testconnections endpoint..."
+          STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://${{ vars.CLOUDFLARE_PAGES_DOMAIN }}/testconnections)
+
+          if [ "$STATUS_CODE" -eq 200 ]; then
+            echo "✅ Test connection passed!"
+          else
+            echo "❌ Test connection failed with status $STATUS_CODE"
+            exit 1
+          fi

@@ -1,0 +1,18 @@
+name = "gliderol-design-centre-visualiser"
+main = "functions/submit.js"  # Adjust if your entry point differs
+compatibility_date = "2025-04-07"
+
+# Production environment
+[env.production]
+name = "gliderol-design-centre-visualiser-production"
+
+# Mark this route to always include the function and expose it publicly at https://url/testconnections
+# Ensures it works even with environment variable usage
+always_include_files = ["functions/testconnections.js"]
+
+# Plaintext environment variables (accessible via env.VAR_NAME)
+[env.production.vars]
+SENDER_NAME = "Gliderol Website"
+SENDER_EMAIL = "website@gliderol.online"
+RECIPIENTS = "matt.crombie@darkice.co, darkiceinteractive@gmail.com"
+VERBOSE_LOGGING = "true"

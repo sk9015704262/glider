@@ -1,0 +1,25 @@
+.footer{
+    background-color: #103469;
+    color: #fff;
+    padding-bottom: 1px;
+}
+
+.footer .footer-logo{
+    width: 200px;
+}
+
+.footer .head{
+    letter-spacing: 1px;
+}
+
+.footer a{
+    color: #fff
+}
+
+.footer ul li{
+    margin-bottom: 10px;
+}
+
+.footer .footer-hr{
+    opacity: 1;
+}

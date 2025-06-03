@@ -1,0 +1,20 @@
+.feedback h2{
+    font-size: 38px;
+}
+
+.feedback textarea{
+    width: 100%;
+    border-color: #e9ecef;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.feedback .feedbtn{
+    background-color: #103469;
+    color: #fff;  
+    font-size: 18px; 
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+
+.contact-form {
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    max-width: 500px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .contact-form .readonly-input
+  {
+    text-transform: capitalize;
+  }
+  
+  .contact-form button {
+    background: #17376c;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #102b54;
+  }
