@@ -82,7 +82,14 @@ export async function onRequestPost(context) {
     }
 
     LogVerbose("Email sent successfully");
-    return new Response("Submitted successfully", { status: 200 });
+    return new Response("Submitted successfully", { status: 200 ,
+       headers: {
+        "Access-Control-Allow-Origin": "*", // Or restrict to a specific domain for security
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "Access-Control-Max-Age": "86400"
+      }
+    });
 
   } catch (err) {
     LogVerbose("Caught exception:", err.message, err.stack);
